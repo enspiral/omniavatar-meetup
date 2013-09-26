@@ -2,7 +2,7 @@
 require File.dirname(__FILE__) + '/lib/omniavatar-meetup/version'
 
 Gem::Specification.new do |gem|
-  gem.add_development_dependency 'rspec', '~> 2.12'
+  gem.add_development_dependency 'rspec', '~> 2.14'
 
   gem.name = 'omniauth-identity'
   gem.version = OmniAvatar::Meetup::VERSION

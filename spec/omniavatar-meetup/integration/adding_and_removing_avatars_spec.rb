@@ -1,31 +1,8 @@
 require 'spec_helper'
 require 'omniavatar/null_avatar'
-
-module OmniAvatar
-  module HasAvatar
-    def avatar
-      NullAvatar.new
-    end
-
-    def add_avatar(avatar)
-
-    end
-  end
-
-  class Avatar
-  end
-
-  class Provider
-  end
-
-  module Providers
-    class Meetup < ::OmniAvatar::Provider
-      def build_avatar(meetup_data)
-
-      end
-    end
-  end
-end
+require 'omniavatar/has_avatar'
+require 'omniavatar/avatar'
+require 'omniavatar/providers/meetup'
 
 class User
   include OmniAvatar::HasAvatar

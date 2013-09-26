@@ -1,4 +1,5 @@
 require 'spec_helper'
+require 'omniavatar/null_avatar'
 
 module OmniAvatar
   module HasAvatar
@@ -8,21 +9,6 @@ module OmniAvatar
 
     def add_avatar(avatar)
 
-    end
-  end
-
-  class NullObject
-    def nil?
-      true
-    end
-
-    def !
-      true
-    end
-  end
-
-  class NullAvatar < NullObject
-    def url
     end
   end
 

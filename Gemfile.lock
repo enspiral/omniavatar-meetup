@@ -1,7 +1,14 @@
+GIT
+  remote: git@github.com:enspiral/omniavatar.git
+  revision: f8d93968a3f9f392ba710af1fa11b5a02cd80dcb
+  specs:
+    omniavatar (0.1)
+
 PATH
   remote: .
   specs:
-    omniauth-identity (0.1)
+    omniavatar-meetup (0.1)
+      omniavatar
 
 GEM
   remote: http://rubygems.org/
@@ -20,5 +27,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  omniauth-identity!
+  omniavatar!
+  omniavatar-meetup!
   rspec (~> 2.14)
